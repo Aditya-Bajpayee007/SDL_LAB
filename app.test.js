@@ -13,7 +13,7 @@ describe("POST /echo", () => {
   it("should return echoed message", async () => {
     const res = await request(app)
       .post("/echo")
-      .send({ message: "Hello CI!" })
+      .send({ message: "Hello CID!" })
       .set("Accept", "application/json");
 
     expect(res.statusCode).toEqual(201);
